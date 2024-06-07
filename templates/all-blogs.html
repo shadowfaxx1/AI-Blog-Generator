@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Blogs</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+       <!-- navbar -->
+<nav class="bg-blue-600  p-4 text-white flex justify-between">
+    <a href="/">
+        <div>
+           <h1 class="text-3xl font-bold "> Video Summarizer </h1>
+       </div>
+       </a>
+    <div class="p-4">
+        <a href="Logout" class=" text-white hover:underline font-semibold"> Logout </a>
+
+    </div>
+</nav>
+<!-- Main Content cont -->
+    <div class="container mx-auto mt-10 px-4 sm:px-0">
+        <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md">
+            <!-- Blog Post sec -->
+            <section>
+                <h2 class="text-xl font-semibold mb-4">All Blog Post</h2>
+                <div class="space-y-4">
+                    {% for article in blog_articles reversed %}
+                    <a href="blog-details/{{article.id}}">
+                    <div class="border border-gray-300 p-4 rounded-lg"> 
+                        <h3 class="text-lg font-semibold">{{article.youtube_title}} </h3>
+                        <p>{{article.generated_content|truncatechars:80}}</p>
+                    </div>
+                </a>
+                    {% endfor %}
+                    
+                   
+                    <!-- Repeat -->
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="text-center p-4 text-black mt-6 font-semibold">
+        Powered By OpenAI 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Django>=3.2
+djangorestframework>=3.12.4
+psycopg2>=2.8
+pytube>=11.0.1
+requests>=2.25.1
+assemblyai>=0.12.1
