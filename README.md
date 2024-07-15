@@ -17,8 +17,7 @@ Video Summarizer is a Django-based web application that fetches and summarizes t
 - Pytube
 
 ## Demo Video
-[![Watch the video](https://img.youtube.com/vi/UbxsSsb7X58/maxresdefault.jpg)](https://youtu.be/UbxsSsb7X58)
-
+[![Watch the video](https://img.youtube.com/vi/Zwcve9oc7NU/maxresdefault.jpg)](https://youtu.be/Zwcve9oc7NU)
 ## Installation Instructions
 1. Clone the repository:
    ```bash
